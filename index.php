@@ -26,7 +26,7 @@
 			<div class="field is-grouped">
 				<label class="label">Serviço: </label>
 				<div class="control">
-					<input class="input is-hovered" name="servico" type="text" placeholder="Digite o serviço" style="margin-left: 5px;" required>
+					<input class="input is-hovered" name="servico" type="text" placeholder="Digite o serviço" style="margin-left: 5px;" autofocus required>
 				</div>
 				<div class="control">
 					<button class="button is-info is-outlined" type="button" onclick="addInput('servico')">+</button>
