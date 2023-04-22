@@ -15,13 +15,11 @@ if (isset($_POST['servico']) && isset($_POST['regiao'])) {
                 'version' => 'latest']);
 
             $result = $client->describeInstances();
-            foreach ($result['Reservations'] as $reservation) {
                 foreach ($reservation['Instances'] as $instance) {
                     echo "Instance ID: " . $instance['InstanceId'] . "\n";
                     echo "Public DNS: " . $instance['PublicDnsName'] . "\n";
                     echo "\n";
                 }
-            }
             break;
         default:
             echo "Os dados digitados não são válidos.";
